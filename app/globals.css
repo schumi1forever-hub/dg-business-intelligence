@@ -769,3 +769,63 @@ main {
   }
 
 }
+/* ===========================================
+   Over pagina - compacte laptopweergave
+   Doel: geen verticale scrollbalk op 1920x1080 met 125% Windows schaal
+=========================================== */
+@media (min-width: 1200px) and (max-height: 900px) {
+  body:has(.about-page) .site-footer {
+    display: none;
+  }
+
+  body:has(.about-page) main {
+    overflow: hidden;
+  }
+
+  .about-page {
+    grid-template-columns: minmax(0, 1fr) 300px;
+    column-gap: 48px;
+    row-gap: 0;
+    align-items: start;
+  }
+
+  .about-page-copy h1 {
+    max-width: 980px;
+    margin: 0 0 14px;
+    font-size: clamp(2.35rem, 3vw, 3rem);
+    line-height: 1.03;
+    letter-spacing: -0.045em;
+  }
+
+  .about-page-copy p:not(.eyebrow) {
+    max-width: 980px;
+    margin: 0 0 12px;
+    font-size: 1.1rem;
+    line-height: 1.38;
+  }
+
+  .about-page-photo {
+    margin-top: -14px;
+  }
+
+  .about-page-photo img {
+    width: 280px;
+    border-radius: 24px;
+    box-shadow: 0 16px 42px rgba(6, 27, 53, 0.13);
+  }
+
+  .about-page-list {
+    margin-top: 0;
+  }
+
+  .about-page-list ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .about-page-list li {
+    margin-bottom: 6px;
+    font-size: 1.06rem;
+    line-height: 1.34;
+  }
+}
