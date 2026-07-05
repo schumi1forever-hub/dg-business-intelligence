@@ -733,4 +733,39 @@ main {
     padding: 0 16px;
   }
 
+  .services-page {
+    padding: 8px 0 0;
+  }
+
+  .services-page h1 {
+    margin-bottom: 14px;
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
+  }
+
+  .services-page .lead {
+    margin-bottom: 12px;
+    line-height: 1.42;
+  }
+
+  .workflow-text {
+    margin: 16px 0 8px;
+  }
+
+  .workflow-text li {
+    margin-bottom: 7px;
+    line-height: 1.42;
+  }
+
+  .about-page-photo {
+    margin-top: -26px;
+  }
+
+  .about-page-photo img {
+    width: 300px;
+  }
+
+  .about-page-list {
+    margin-top: 2px;
+  }
+
 }
