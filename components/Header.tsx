@@ -18,8 +18,11 @@ export default function Header() {
         <a href="/diensten">Diensten</a>
         <a href="/werkwijze">Werkwijze</a>
         <a href="/over">Over</a>
-        <a href="/#contact" className="nav-cta">
-          Contact
+        <a
+           href="mailto:tim_de_goede@yahoo.com?subject=Kennismaking"
+           className="nav-cta"
+>
+           Contact
         </a>
       </nav>
     </header>
